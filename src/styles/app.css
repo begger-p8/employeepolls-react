@@ -1,0 +1,229 @@
+/* generals */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+body {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+.blank-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+.button {
+    font-size: 16px;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 0;
+}
+.button:hover {
+    background-color: lightgray;
+}
+.button.is-secondary {
+    background-color: white;
+}
+.button.is-secondary:hover {
+    background: lightgray;
+}
+.button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.profile-avatar {
+    border-radius: 100px;
+    border: 2px solid gray;
+}
+.card {
+    background-color: ivory;
+    box-shadow: 0px 0px 4px 1px lightgray;
+    margin: auto;
+    padding: 2rem;
+}
+.select {
+    font-size: 16px;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    outline: none;
+}
+.select:hover {
+    background-color: lightgray;
+}
+a.wrapper-link {
+    text-decoration: none;
+}
+/* navbar */
+.navbar {
+    background-color: lightblue;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+    box-shadow: 0px 2px 5px lightgray;
+    margin-bottom: 3rem;
+}
+.nav-items {
+    display: flex;
+}
+.nav-item {
+    margin-right: 5rem;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+.profile-name {
+    margin-right: 1rem;
+}
+/* login */
+.login-card {
+    text-align: center;
+}
+/* dashboard */
+.category-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.category-switch {
+    border: 2px solid lightgray;
+    display: inline-block;
+    text-align: center;
+}
+.category-switch .button {
+    background-color: transparent;
+}
+.category-switch .button.is-active {
+    background-color: lightblue;
+}
+/* poll */
+.poll {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.poll:hover {
+    box-shadow: 0px 0px 4px 3px lightgray;
+}
+.poll-page .poll:hover {
+    box-shadow: 0px 0px 4px 1px lightgray;
+}
+.poll-headline {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.author-holder {
+    width: 20%;
+}
+.author-info {
+    margin-bottom: 0;
+}
+.question-holder {
+    width: 80%;
+}
+.radio-poll {
+    margin-bottom: 0.5rem;
+}
+.radio-poll.is-fake::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3rem;
+    background-color: lightgray;
+    margin-right: 1rem;
+}
+.radio-poll input {
+    margin: 0;
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+}
+.result-holder {
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 2px solid lightgray;
+    padding-top: 1rem;
+    text-align: center;
+}
+.result-percentage {
+    margin-bottom: 0;
+}
+/* add poll */
+.add-poll-form {
+    width: 100%;
+    max-width: 100%;
+}
+.poll-input {
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+    width: calc(100% - 2rem - 4px);
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border: 2px solid lightgray;
+    outline: none;
+}
+.form-button-holder {
+    text-align: center;
+    margin-top: 1rem;
+}
+/* leaderboard */
+.leaderboard-table {
+    width: 100%;
+    border-spacing: 0;
+}
+.leaderboard-table th {
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+}
+.leaderboard-user td {
+    border-top: 2px solid lightgray;
+    margin-bottom: 1rem;
+}
+.board-user {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+}
+.board-username {
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+/* not found */
+.not-found {
+    text-align: center;
+}
